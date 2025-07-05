@@ -1,0 +1,131 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: aqua;
+}
+
+
+button {
+    font-family: monospace;
+    cursor: pointer;
+}
+
+
+.inicio {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+}
+
+.inicio button { 
+    
+    background-color: aqua;
+    color: black;
+    border: none;
+    height: 30px;
+}
+
+.inicio button:hover {
+    
+    background-color: #0a5963;
+}
+
+/* MODAL FONDO OSCURO CENTRADO */
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro transparente */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* CAJA BLANCA DEL MODAL CENTRADO */
+.content-modal {
+    background-color: #1e1e1e;
+    color: aqua;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* FORMULARIO ACOMODADO EN COLUMNA */
+.content-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content-modal label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.content-modal input {
+    background-color: #454343;
+    font-family: monospace;
+    color: antiquewhite;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #474545;
+    border-radius: 6px;
+}
+
+/* BOTÓN DE ENVÍO */
+.content-modal button[type="submit"] {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(8, 165, 165);
+    color: black;
+    border: none;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content-modal button[type="submit"]:hover {
+    background-color: #00e1ff;
+}
+
+.menu-user {
+    display: none;
+    position: fixed;
+
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+}
+
+.menu-content {
+    color: #00e1ff;
+    font-family: monospace;
+}
+
+
+.tareas-pendientes h2 {
+    font-size: 26px;
+    padding: 20px;
+    color: darkmagenta;
+}
+
