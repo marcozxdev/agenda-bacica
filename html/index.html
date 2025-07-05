@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Registrar o Ingresar</title>
+</head>
+<body>
+
+
+  
+  <div class="inicio" id="inicio" style="align-items: center; text-align: center;">
+    <div class="subinicio">
+      <h1>Agenda</h1>
+      <h2>Para Usar La Agenda Debe:</h2>
+      <button id="ingresar"><strong>Iniciar Sesion</strong></button> <h3>O</h3>
+      <button id="registrar"><strong>Registrarse</strong></button>
+    </div>
+  
+  </div>
+
+
+  <!-- modal registrar-->
+  <div class="modal" id="modal-registrar">
+    <div class="content-modal">
+
+      <h2>Registrarse</h2>
+      <form id="form-registrar">
+
+        <label for="r-name">Nombre:</label>
+        <input type="text" name="r-name" id="r-name">
+
+        <label for="r-email">Gmail:</label>
+        <input type="email" name="r-email" id="r-email">
+
+        <label for="r-1password">Contraseña:</label>
+        <input type="password" name="r-1password" id="r-1password">
+
+        <label for="r-2password">Verificacion De Contraseña</label>
+        <input type="password" name="r-2password" id="r-2password">
+
+        <h3><span id="r-mensage"></span></h3>
+
+        <button type="submit"><strong>Enviar</strong></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- modal ingresar -->
+  <div class="modal" id="modal-ingresar">
+    <div class="content-modal">
+      
+      <h2>Iniciar Sesión</h2>
+    <form id="form-ingresar">
+
+      <label for="i-email">Gmail:</label>
+      <input type='email' name="i-email" id="i-email">
+      
+      <label for="i-password">Contraseña:</label>
+      <input type="password" name="i-password" id="i-password">
+
+      <span id="i-mensage"></span>
+      
+      <button type="submit"><strong>Enviar</strong></button>
+    </form>
+    </div>
+  </div>
+  
+  <div class="menu-user" id="menu-user">
+    <div class="menu-content">
+      <h1>Hi! <span id="m-saludo" style="color: crimson;"></span></h1>
+      <div class="tareas-pendientes">
+        <h2>Tareas pendientes</h2>
+        <ul style="list-style: none;">
+          <li><h3>1. terminar de acomodar los form </h3></li>
+          <li><h3>2. implementar algo como una bienvenida personalizada</h3></li>
+          <li><h3>3. implemntar los botones y inputs y la logica para añadir tareas</h3></li>
+          <li><h3>4. implementar el boton que muestre las  tareas y un input o algo para borrar o marcar las tareas ya echas</h3></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
